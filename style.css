@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #fdf6fb;
+    color: #555;
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin: 20px;
+    background: #dff4ff;
+    border: 3px solid #ffc8dd;
+    border-radius: 20px;
+}
+
+header p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff7eb3;
+}
+
+/* Logo */
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffc8dd;
+}
+
+/* Container */
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card{
+    flex: 1;
+    min-width: 250px;
+    background: #ffffff;
+    border: 3px solid #cdefff;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(255, 200, 221, 0.4);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.profile{
+    position: relative;
+    min-height: 350px;
+    overflow: hidden;
+    border: 3px solid #cdefff;
+}
+
+.belakang{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    top: 60px;
+    left: 70%;
+    transform: translateX(-75%);
+
+    border: 4px solid #cdefff;
+    z-index: 1;
+}
+
+.depan{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    top: 95px;
+    left: 50%;
+    transform: translateX(-15%);
+
+    border: 4px solid #ffc8dd;
+    z-index: 2;
+}
+
+/* Biodata */
+.biodata{
+    text-align: center;
+}
+
+.biodata h2{
+    color: #ff7eb3;
+    margin-bottom: 20px;
+}
+
+.biodata p{
+    margin: 15px 0;
+}
+
+.nota a{
+    color: #7ec8ff;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.nota a:hover{
+    text-decoration: underline;
+}-
